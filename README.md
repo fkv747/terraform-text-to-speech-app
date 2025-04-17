@@ -33,13 +33,13 @@ This diagram summarizes the full AWS-powered architecture, built and deployed us
 ![In-Use UI](screenshots/Text-To-Speech-InUse.png)
 
 **API Gateway – POST /convert route setup**  
-![API Gateway](screenshots/API Gateway.png)
+![API Gateway](screenshots/api-gateway.png)
 
 **Amplify – Deployment screen**  
-![AWS Amplify](screenshots/AWS Amplify.png)
+![AWS Amplify](screenshots/aws-amplify.png)
 
 **CloudWatch – Lambda logs and execution time**  
-![CloudWatch Logs](screenshots/CloudWatch Log.png)
+![CloudWatch Log](screenshots/cloudwatch-log.png)
 
 **Terraform – Output after successful apply**  
 ![Terraform Apply Output](screenshots/Terraform-Apply-1.png)
