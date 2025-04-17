@@ -3,6 +3,9 @@ resource "aws_amplify_app" "this" {
   platform = "WEB_COMPUTE"
 
   # You can add build_spec here later if needed
+    tags = {
+    Project = "TextToSpeech"
+  }
 }
 
 resource "aws_amplify_branch" "main" {
