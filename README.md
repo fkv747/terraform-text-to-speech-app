@@ -96,4 +96,5 @@ Manual Step (Frontend)
 - Click "Manual deploy" and upload frontend.zip from the frontend/ folder
 
 Built by Kev
+
 This project was a Terraform-first rebuild of my original AWS text-to-speech app — now fully modular, reproducible, and cloud-native.
