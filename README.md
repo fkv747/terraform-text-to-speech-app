@@ -6,6 +6,15 @@ This project combines the power of AWS Lambda, API Gateway, S3, and Amplify to d
 
 ---
 
+## Demo
+
+[Watch the YouTube demo](https://your-demo-link.com)
+
+This app is currently turned off to save on AWS costs,  
+but you can still see how it works in the walkthrough video above.
+
+---
+
 ## Architecture
 
 This diagram summarizes the full AWS-powered architecture, built and deployed using Terraform:
