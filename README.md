@@ -6,51 +6,69 @@ This project combines the power of AWS Lambda, API Gateway, S3, and Amplify to d
 
 ---
 
-## Demo
+## Architecture
 
-[Watch the YouTube video](https://your-demo-link.com)  
-Built in less than a day using Terraform modules and AWS services.
+This diagram summarizes the full AWS-powered architecture, built and deployed using Terraform:
 
-> This demo is no longer live to reduce cloud costs.  
-> But you can deploy your own version in minutes using the instructions below.
-
----
-
-## App Architecture
-
-User Input (Amplify) ↓ API Gateway (HTTP API v2) ↓ Lambda (Python) — Calls Polly + Uploads to S3 ↓ S3 — Generates presigned URL for audio ↓ Returns audio URL to Amplify frontend
-
----
-
-## Tech Stack
-
-- Infrastructure: Terraform (modular)
-- Frontend: Static HTML/CSS/JS (Amplify deployed)
-- Backend: AWS Lambda (Python)
-- Cloud Services:
-  - Amazon Polly (Text-to-Speech)
-  - S3 (audio file storage)
-  - API Gateway (HTTP)
-  - IAM (role + permission control)
-  - Amplify (hosting frontend)
+![Architecture Diagram](screenshots/text-to-speech-Diagram.png)
 
 ---
 
 ## Features
 
-- Converts text into `.mp3` audio using Polly
+- Converts user input text into `.mp3` audio using Amazon Polly
 - Uploads audio to S3 and returns a presigned URL
-- Deployable via Terraform from scratch
-- CORS-safe and Amplify-friendly
-- Clean and modern mobile-style UI
+- Fully managed through reusable Terraform modules
+- Frontend hosted with Amplify (static HTML/CSS/JS)
+- CORS-safe and ready for production integrations
+
+---
+
+## Screenshots
+
+**Frontend UI – Welcome Screen**  
+![Welcome UI](screenshots/Text-To-Speech-Welcome.png)
+
+**Frontend UI – Demo in Action**  
+![In-Use UI](screenshots/Text-To-Speech-InUse.png)
+
+**API Gateway – POST /convert route setup**  
+![API Gateway](screenshots/API Gateway.png)
+
+**Amplify – Deployment screen**  
+![AWS Amplify](screenshots/AWS Amplify.png)
+
+**CloudWatch – Lambda logs and execution time**  
+![CloudWatch Logs](screenshots/CloudWatch Log.png)
+
+**Terraform – Output after successful apply**  
+![Terraform Apply Output](screenshots/Terraform-Apply-1.png)
+
+**Terraform – Execution plan with resource changes**  
+![Terraform Plan](screenshots/Terraform-Apply-2.png)
+
+---
+
+## Tech Stack
+
+- **Terraform (modular structure)**
+- **AWS Lambda (Python 3.12)**
+- **Amazon Polly (Text-to-Speech)**
+- **Amazon S3 (audio file storage)**
+- **API Gateway (HTTP API v2)**
+- **AWS Amplify (Frontend hosting)**
+- **IAM (custom roles/policies)**
+- **CloudWatch (log monitoring)**
 
 ---
 
 ## Folder Structure
 
 ```text
-/text-to-speech-backend/
+/terraform-text-to-speech-app/
 ├── main.tf
+├── outputs.tf
+├── terraform.lock.hcl
 ├── modules/
 │   ├── amplify/
 │   ├── api_gateway/
@@ -62,9 +80,17 @@ User Input (Amplify) ↓ API Gateway (HTTP API v2) ↓ Lambda (Python) — Calls
 ├── frontend/
 │   └── index.html
 ├── .gitignore
-├── outputs.tf
 ├── README.md
-└── terraform.lock.hcl
+└── screenshots/
+    ├── Text-To-Speech-Welcome.png
+    ├── Text-To-Speech-InUse.png
+    ├── API Gateway.png
+    ├── AWS Amplify.png
+    ├── CloudWatch Log.png
+    ├── Terraform-Apply-1.png
+    ├── Terraform-Apply-2.png
+    └── text-to-speech-Diagram.png
+
 ```
 ---
 
@@ -90,6 +116,7 @@ cd ..
 terraform init
 terraform apply
 ```
+
 Manual Step (Frontend)
 - Go to the Amplify Console
 - Open the main branch
