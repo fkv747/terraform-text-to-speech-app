@@ -1,10 +1,15 @@
 # Terraform Text-to-Speech App
 
+![Terraform](https://img.shields.io/badge/IaC-Terraform-5c4ee5?logo=terraform&logoColor=white)
+![AWS](https://img.shields.io/badge/Cloud-AWS-232f3e?logo=amazonaws&logoColor=white)
+![Amazon Polly](https://img.shields.io/badge/Text--to--Speech-Amazon%20Polly-ff9900?logo=amazonaws&logoColor=white)
+
 A serverless, infrastructure-as-code application that converts text to speech using Amazon Polly, deployed entirely with Terraform.
 
 This project combines the power of AWS Lambda, API Gateway, S3, and Amplify to deliver a modern, full-stack solution — all without manually touching the AWS Console.
 
 ---
+
 
 ## Demo
 
@@ -15,6 +20,7 @@ but you can still see how it works in the walkthrough video above.
 
 ---
 
+
 ## Architecture
 
 This diagram summarizes the full AWS-powered architecture, built and deployed using Terraform:
@@ -22,6 +28,7 @@ This diagram summarizes the full AWS-powered architecture, built and deployed us
 ![Architecture Diagram](screenshots/text-to-speech-Diagram.png)
 
 ---
+
 
 ## Features
 
@@ -32,6 +39,7 @@ This diagram summarizes the full AWS-powered architecture, built and deployed us
 - CORS-safe and ready for production integrations
 
 ---
+
 
 ## Screenshots
 
@@ -58,6 +66,7 @@ This diagram summarizes the full AWS-powered architecture, built and deployed us
 
 ---
 
+
 ## Tech Stack
 
 - **Terraform (modular structure)**
@@ -70,6 +79,7 @@ This diagram summarizes the full AWS-powered architecture, built and deployed us
 - **CloudWatch (log monitoring)**
 
 ---
+
 
 ## Folder Structure
 
@@ -103,11 +113,13 @@ This diagram summarizes the full AWS-powered architecture, built and deployed us
 ```
 ---
 
+
 ## How to Deploy Your Own
 
 ### Prerequisites
 - Terraform CLI installed
 - AWS CLI configured (`aws configure`) or credentials loaded via environment variables
+
 
 ### Steps
 
