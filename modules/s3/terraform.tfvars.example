@@ -1,0 +1,4 @@
+bucket_name        = "my-app-storage-bucket"
+enable_versioning  = true
+enable_encryption  = true
+is_public          = false

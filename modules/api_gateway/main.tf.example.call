@@ -1,0 +1,9 @@
+module "api_gateway" {
+  source        = "./modules/api_gateway"
+  api_name      = "doc-converter-api"
+  lambda_arn    = module.lambda.function_arn
+  route_path    = "/convert"
+  method        = "POST"
+  stage_name    = "prod"
+  enable_cors   = true
+}

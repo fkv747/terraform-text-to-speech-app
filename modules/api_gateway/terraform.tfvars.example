@@ -1,0 +1,5 @@
+api_name    = "doc-converter-api"
+route_path  = "/convert"
+method      = "POST"
+stage_name  = "prod"
+enable_cors = true

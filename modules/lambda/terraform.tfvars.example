@@ -1,0 +1,10 @@
+function_name         = "doc-converter-lambda" # What your Lambda is called in AWS
+lambda_zip_path       = "lambda.zip"
+handler               = "lambda_function.lambda_handler" # The specific Python function that runs
+runtime               = "python3.9"
+timeout               = 10
+memory                = 256
+environment_variables = {
+  BUCKET_NAME = "your-output-bucket"
+}
+
