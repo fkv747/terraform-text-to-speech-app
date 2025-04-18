@@ -13,7 +13,7 @@ This project combines the power of AWS Lambda, API Gateway, S3, and Amplify to d
 
 ## Demo
 
-[Watch the YouTube demo]([https://your-demo-link.com](https://youtu.be/trLOUC-Cyks))
+[Watch the YouTube demo](https://your-demo-link.com](https://youtu.be/trLOUC-Cyks))
 
 This app is currently turned off to save on AWS costs,  
 but you can still see how it works in the walkthrough video above.
