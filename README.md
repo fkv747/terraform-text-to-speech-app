@@ -155,3 +155,10 @@ This project helped me deepen my understanding of:
 - Structuring a full-stack project for future reuse and scaling
 
 It also pushed me to improve how I document and present my work for technical audiences.
+
+
+---
+
+## Connect with Me
+
+📫 [LinkedIn](www.linkedin.com/in/franc-kevin-v-07108b111)
