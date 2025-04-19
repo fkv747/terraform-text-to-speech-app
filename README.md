@@ -161,4 +161,4 @@ It also pushed me to improve how I document and present my work for technical au
 
 ## Connect with Me
 
-📫 [LinkedIn](www.linkedin.com/in/franc-kevin-v-07108b111)
+📫 [LinkedIn](https://www.linkedin.com/in/franc-kevin-v-07108b111/)
