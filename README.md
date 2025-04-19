@@ -10,16 +10,13 @@ This project combines the power of AWS Lambda, API Gateway, S3, and Amplify to d
 
 ---
 
-
 ## Demo
 [Watch the YouTube demo](https://youtu.be/trLOUC-Cyks)
-
 
 This app is currently turned off to save on AWS costs,  
 but you can still see how it works in the walkthrough video above.
 
 ---
-
 
 ## Architecture
 
@@ -28,7 +25,6 @@ This diagram summarizes the full AWS-powered architecture, built and deployed us
 ![Architecture Diagram](screenshots/text-to-speech-Diagram.png)
 
 ---
-
 
 ## Features
 
@@ -39,7 +35,6 @@ This diagram summarizes the full AWS-powered architecture, built and deployed us
 - CORS-safe and ready for production integrations
 
 ---
-
 
 ## Screenshots
 
@@ -66,7 +61,6 @@ This diagram summarizes the full AWS-powered architecture, built and deployed us
 
 ---
 
-
 ## Tech Stack
 
 - **Terraform (modular structure)**
@@ -79,7 +73,6 @@ This diagram summarizes the full AWS-powered architecture, built and deployed us
 - **CloudWatch (log monitoring)**
 
 ---
-
 
 ## Folder Structure
 
@@ -109,17 +102,15 @@ This diagram summarizes the full AWS-powered architecture, built and deployed us
     ├── Terraform-Apply-1.png
     ├── Terraform-Apply-2.png
     └── text-to-speech-Diagram.png
-
 ```
----
 
+---
 
 ## How to Deploy Your Own
 
 ### Prerequisites
 - Terraform CLI installed
 - AWS CLI configured (`aws configure`) or credentials loaded via environment variables
-
 
 ### Steps
 
@@ -138,11 +129,29 @@ terraform init
 terraform apply
 ```
 
-Manual Step (Frontend)
+### Manual Step (Frontend)
 - Go to the Amplify Console
 - Open the main branch
 - Click "Manual deploy" and upload frontend.zip from the frontend/ folder
 
+---
+
+## About
+
 Built by Kev
 
 This project was a Terraform-first rebuild of my original AWS text-to-speech app — now fully modular, reproducible, and cloud-native.
+
+
+## 🧠 What I Learned
+
+This project helped me deepen my understanding of:
+
+- Writing clean, modular **Terraform code**
+- Connecting multiple **AWS services** without using the AWS Console
+- Deploying real apps with **Infrastructure as Code (IaC)**
+- Handling **CORS** and integrating **API Gateway with Lambda**
+- Monitoring and debugging with **CloudWatch logs**
+- Structuring a full-stack project for future reuse and scaling
+
+It also pushed me to improve how I document and present my work for technical audiences.
